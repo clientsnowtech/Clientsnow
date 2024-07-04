@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll('a[target="_blank"], a[target="blank"]');e.forEach(e=>{let r=e.getAttribute("rel");if(r){let t=r.split(" ");t.includes("noopener")||t.push("noopener"),t.includes("noreferrer")||t.push("noreferrer"),e.setAttribute("rel",t.join(" "))}else e.setAttribute("rel","noopener noreferrer")})});
