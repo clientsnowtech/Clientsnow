@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){let t=document.querySelectorAll("img");t.forEach(t=>{var e;let r=t.getAttribute("src"),a=r.substring(r.lastIndexOf("/")+1,r.lastIndexOf(".")),i=(e=a).split("-").map(t=>t.charAt(0).toUpperCase()+t.slice(1)).join(" ");t.hasAttribute("alt")&&""!==t.getAttribute("alt").trim()||t.setAttribute("alt",i)})});
